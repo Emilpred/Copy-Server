@@ -1,0 +1,264 @@
+[18:54:44 10/15/26] [ERROR] CMySQLConnection::Connect - (error #1698) Access denied for user 'gs104939'@'185.189.255.97'
+[18:54:44 10/15/26] [ERROR] CMySQLConnection::SetCharset - invalid charset ("cp1251") or not connected
+[18:54:44 10/15/26] [ERROR] CMySQLConnection::Connect - (error #1698) Access denied for user 'gs104939'@'185.189.255.97'
+[18:54:44 10/15/26] [ERROR] CMySQLConnection::Connect - (error #1698) Access denied for user 'gs104939'@'185.189.255.97'
+[18:54:44 10/15/26] [ERROR] CMySQLConnection::SetCharset - invalid charset ("cp1251") or not connected
+[18:54:44 10/15/26] [ERROR] CMySQLConnection::SetCharset - invalid charset ("cp1251") or not connected
+[18:54:44 10/15/26] [ERROR] CMySQLConnection::Connect - (error #1698) Access denied for user 'gs104939'@'185.189.255.97'
+[18:54:44 10/15/26] [ERROR] CMySQLConnection::SetCharset - invalid charset ("cp1251") or not connected
+[18:54:45 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM `houses` ORDER BY `houses`.`ID` ASC")
+[18:54:45 10/15/26] [WARNING] cache_get_row_count - no active cache
+[18:54:45 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:54:45 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM `businesses`")
+[18:54:45 10/15/26] [WARNING] cache_get_row_count - no active cache
+[18:54:45 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:54:45 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM `orgsinfo`")
+[18:54:45 10/15/26] [WARNING] cache_get_row_count - no active cache
+[18:54:45 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:54:45 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM `zonesinfo` ORDER BY `ID`")
+[18:54:45 10/15/26] [WARNING] cache_get_row_count - no active cache
+[18:54:45 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:54:45 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM family_zone")
+[18:54:45 10/15/26] [WARNING] cache_get_row_count - no active cache
+[18:54:45 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:54:45 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM `bh_objects`")
+[18:54:45 10/15/26] [WARNING] cache_get_row_count - no active cache
+[18:54:46 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM `builds`")
+[18:54:46 10/15/26] [WARNING] cache_get_row_count - no active cache
+[18:54:46 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:54:46 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM `trailers`")
+[18:54:46 10/15/26] [WARNING] cache_get_row_count - no active cache
+[18:54:46 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:54:46 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM `modellimit`")
+[18:54:46 10/15/26] [WARNING] cache_get_row_count - no active cache
+[18:54:46 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:54:46 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM `antidm`")
+[18:54:46 10/15/26] [WARNING] cache_get_row_count - no active cache
+[18:54:46 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:54:46 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM anticheat_settings ORDER BY ac_code")
+[18:54:46 10/15/26] [WARNING] cache_get_data - no active cache
+[18:54:46 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM `hotels_rooms`")
+[18:54:46 10/15/26] [WARNING] cache_get_row_count - no active cache
+[18:54:46 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:54:46 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM farminfo")
+[18:54:46 10/15/26] [WARNING] cache_get_row_count - no active cache
+[18:54:46 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:54:46 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM map_objects")
+[18:54:46 10/15/26] [WARNING] cache_get_row_count - no active cache
+[18:54:46 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:54:46 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM family_kv ORDER BY data_id, ID;")
+[18:54:46 10/15/26] [WARNING] cache_get_row_count - no active cache
+[18:54:46 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:54:46 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM `sklads`")
+[18:54:46 10/15/26] [WARNING] cache_get_row_count - no active cache
+[18:54:46 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:54:46 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM `carsbonus`")
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [WARNING] cache_get_field_content_int - no active cache
+[18:54:46 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM reklama ORDER BY id")
+[18:54:46 10/15/26] [WARNING] cache_get_row_count - no active cache
+[18:54:46 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:54:46 10/15/26] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away (Query: "SELECT * FROM `private_fraction` ORDER BY ID")
+[18:54:46 10/15/26] [WARNING] cache_get_row_count - no active cache
+[18:54:46 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:54:46 10/15/26] [ERROR] mysql_close - invalid connection handle (id: 0)
+[19:09:34 10/15/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[19:09:34 10/15/26] [WARNING] cache_get_row_count - no active cache
+[19:09:34 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[19:19:55 10/15/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[19:19:55 10/15/26] [WARNING] cache_get_row_count - no active cache
+[19:19:55 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[19:27:12 10/15/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[19:27:12 10/15/26] [WARNING] cache_get_row_count - no active cache
+[19:27:12 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[19:27:50 10/15/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[19:27:50 10/15/26] [ERROR] cache_get_row_int - invalid datatype
+[19:31:10 10/15/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[19:31:10 10/15/26] [WARNING] cache_get_row_count - no active cache
+[19:31:10 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[19:32:37 10/15/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[19:32:37 10/15/26] [ERROR] cache_get_row_int - invalid datatype
+[19:38:01 10/15/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[19:38:01 10/15/26] [WARNING] cache_get_row_count - no active cache
+[19:38:01 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[19:38:27 10/15/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[19:38:27 10/15/26] [ERROR] cache_get_row_int - invalid datatype
+[19:39:05 10/15/26] [ERROR] CMySQLQuery::Execute[] - (error #1054) Unknown column 'SAG-Eur' in 'SET' (Query: "UPDATE `accounts` SET `SAG-Eur` = '197001632' WHERE `ID` = '5'")
+[19:39:09 10/15/26] [ERROR] CMySQLQuery::Execute[] - (error #1054) Unknown column 'SAG-Eur' in 'SET' (Query: "UPDATE `accounts` SET `SAG-Eur` = '197001532' WHERE `ID` = '5'")
+[19:39:10 10/15/26] [ERROR] CMySQLQuery::Execute[] - (error #1054) Unknown column 'SAG-Eur' in 'SET' (Query: "UPDATE `accounts` SET `SAG-Eur` = '197001432' WHERE `ID` = '5'")
+[20:01:18 10/15/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[20:01:18 10/15/26] [WARNING] cache_get_row_count - no active cache
+[20:01:18 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[20:01:38 10/15/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[20:01:38 10/15/26] [ERROR] cache_get_row_int - invalid datatype
+[20:01:47 10/15/26] [ERROR] CMySQLQuery::Execute[] - (error #1054) Unknown column 'SAG-Eur' in 'SET' (Query: "UPDATE `accounts` SET `SAG-Eur` = '197001332' WHERE `ID` = '5'")
+[20:02:13 10/15/26] [ERROR] CMySQLQuery::Execute[] - (error #1054) Unknown column 'SAG-Eur' in 'SET' (Query: "UPDATE `accounts` SET `SAG-Eur` = '197001321' WHERE `ID` = '5'")
+[20:02:17 10/15/26] [ERROR] CMySQLQuery::Execute[] - (error #1054) Unknown column 'SAG-Eur' in 'SET' (Query: "UPDATE `accounts` SET `SAG-Eur` = '197001309' WHERE `ID` = '5'")
+[20:04:33 10/15/26] [ERROR] CMySQLQuery::Execute[] - (error #1054) Unknown column 'SAG-Eur' in 'SET' (Query: "UPDATE `accounts` SET `SAG-Eur` = '197001198' WHERE `ID` = '5'")
+[20:04:56 10/15/26] [ERROR] CMySQLQuery::Execute[] - (error #1054) Unknown column 'SAG-Eur' in 'SET' (Query: "UPDATE `accounts` SET `SAG-Eur` = '197001191' WHERE `ID` = '5'")
+[20:06:31 10/15/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[20:06:31 10/15/26] [WARNING] cache_get_row_count - no active cache
+[20:06:31 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[20:07:01 10/15/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[20:07:01 10/15/26] [ERROR] cache_get_row_int - invalid datatype
+[20:11:09 10/15/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[20:11:09 10/15/26] [WARNING] cache_get_row_count - no active cache
+[20:11:09 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[20:11:38 10/15/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[20:11:38 10/15/26] [ERROR] cache_get_row_int - invalid datatype
+[20:17:57 10/15/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[20:17:58 10/15/26] [WARNING] cache_get_row_count - no active cache
+[20:17:58 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[20:18:25 10/15/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[20:18:25 10/15/26] [ERROR] cache_get_row_int - invalid datatype
+[20:34:28 10/15/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[20:34:28 10/15/26] [WARNING] cache_get_row_count - no active cache
+[20:34:28 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[20:34:49 10/15/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[20:34:49 10/15/26] [ERROR] cache_get_row_int - invalid datatype
+[20:41:36 10/15/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[20:41:36 10/15/26] [WARNING] cache_get_row_count - no active cache
+[20:41:36 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[20:41:56 10/15/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[20:41:56 10/15/26] [ERROR] cache_get_row_int - invalid datatype
+[20:51:03 10/15/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[20:51:03 10/15/26] [WARNING] cache_get_row_count - no active cache
+[20:51:03 10/15/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[20:51:35 10/15/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[20:51:35 10/15/26] [ERROR] cache_get_row_int - invalid datatype
+[22:22:49 10/15/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[22:22:49 10/15/26] [ERROR] cache_get_row_int - invalid datatype
+[22:25:24 10/15/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[22:25:24 10/15/26] [ERROR] cache_get_row_int - invalid datatype
+[19:29:31 10/16/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[19:29:31 10/16/26] [ERROR] cache_get_row_int - invalid datatype
+[21:10:54 10/16/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'WilliKrov'")
+[21:10:54 10/16/26] [ERROR] cache_get_row_int - invalid datatype
+[21:14:01 10/16/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'WilliKrov'")
+[21:14:01 10/16/26] [ERROR] cache_get_row_int - invalid datatype
+[21:35:35 10/16/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[21:35:35 10/16/26] [WARNING] cache_get_row_count - no active cache
+[21:35:35 10/16/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[21:46:08 10/16/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[21:46:08 10/16/26] [WARNING] cache_get_row_count - no active cache
+[21:46:08 10/16/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[21:51:30 10/16/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[21:51:30 10/16/26] [ERROR] cache_get_row_int - invalid datatype
+[22:30:20 10/16/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[22:30:20 10/16/26] [WARNING] cache_get_row_count - no active cache
+[22:30:20 10/16/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[22:31:02 10/16/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[22:31:02 10/16/26] [ERROR] cache_get_row_int - invalid datatype
+[22:33:15 10/16/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[22:33:15 10/16/26] [ERROR] cache_get_row_int - invalid datatype
+[09:21:58 10/17/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[09:21:58 10/17/26] [ERROR] cache_get_row_int - invalid datatype
+[09:22:57 10/17/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'WilliKrov'")
+[09:22:57 10/17/26] [ERROR] cache_get_row_int - invalid datatype
+[09:24:32 10/17/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[09:24:32 10/17/26] [WARNING] cache_get_row_count - no active cache
+[09:24:32 10/17/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[09:25:06 10/17/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[09:25:06 10/17/26] [ERROR] cache_get_row_int - invalid datatype
+[09:25:37 10/17/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'WilliKrov'")
+[09:25:37 10/17/26] [ERROR] cache_get_row_int - invalid datatype
+[09:26:33 10/17/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[09:26:33 10/17/26] [WARNING] cache_get_row_count - no active cache
+[09:26:33 10/17/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[09:27:03 10/17/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[09:27:03 10/17/26] [ERROR] cache_get_row_int - invalid datatype
+[09:27:43 10/17/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'WilliKrov'")
+[09:27:43 10/17/26] [ERROR] cache_get_row_int - invalid datatype
+[09:28:50 10/17/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[09:28:50 10/17/26] [WARNING] cache_get_row_count - no active cache
+[09:28:50 10/17/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[09:29:23 10/17/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[09:29:23 10/17/26] [ERROR] cache_get_row_int - invalid datatype
+[09:30:02 10/17/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'WilliKrov'")
+[09:30:02 10/17/26] [ERROR] cache_get_row_int - invalid datatype
+[09:30:58 10/17/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[09:30:58 10/17/26] [ERROR] cache_get_row_int - invalid datatype
+[09:33:08 10/17/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[09:33:08 10/17/26] [ERROR] cache_get_row_int - invalid datatype
+[09:37:37 10/17/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[09:37:37 10/17/26] [ERROR] cache_get_row_int - invalid datatype
+[12:55:35 10/17/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[12:55:35 10/17/26] [ERROR] cache_get_row_int - invalid datatype
