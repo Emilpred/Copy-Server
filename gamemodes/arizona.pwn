@@ -17,6 +17,10 @@
 #include md5.inc
 #include Pawn.RakNet.inc
 #include ../library/anticheat.inc
+
+// poker filterscript dialog IDs - must match filterscripts/poker.pwn
+#define POKER_DIALOG_BUYIN 32701
+#define POKER_DIALOG_RAISE 32702
 #include nex-uf.inc
 #include mapandreas.inc
 #include UnixConvertor.inc
@@ -13731,7 +13735,8 @@ new ItemsInfo[][ItemInfo] =
 	{18106, true, 1, "", "USE", "NAUDOTI", -1535560961, "Object: Demonas Vaiduoklis", "Objektas: Demonas Vaiduoklis", "Objektas: {FDCF28}Demonas Vaiduoklis [Objektas]", 0.000000, 0.000000, 200.000000, 0.899999, -1},
 	{18107, true, 1, "", "USE", "NAUDOTI", -1535560961, "Object: Halloween vazonas", "Objektas: Halloween vazonas", "Objektas: {FDCF28}Halloween vazonas [Objektas]", 0.000000, 0.000000, 200.000000, 0.899999, -1},
 	{18108, true, 1, "", "USE", "NAUDOTI", -1535560961, "Object: LEGO Skeletas", "Objektas: LEGO Skeletas", "Objektas: {FDCF28}LEGO Skeletas [Objektas]", 0.000000, 0.000000, 200.000000, 0.899999, -1},
-	{15607, true, 1, "", "PUT", "UZSIDETI", 0x333333FF, "Rusiskas Kirvys", "Rusiskas Kirvys", "Aksesuaras: {FDCF28}Rusiskas Kirvys", 90.000000, 0.000000, 90.000000, 1.000000, -1}
+	{15607, true, 1, "", "PUT", "UZSIDETI", 0x333333FF, "Rusiskas Kirvys", "Rusiskas Kirvys", "Aksesuaras: {FDCF28}Rusiskas Kirvys", 90.000000, 0.000000, 90.000000, 1.000000, -1},
+	{15607, true, 1, "", "PUT", "UZSIDETI", 0x333333FF, "EURO Zetonai", "EURO Zetonai", "Daiktas: {FDCF28}EURO Zetonai", 90.000000, 0.000000, 90.000000, 1.000000, -1}
 
 };
 
@@ -33808,6 +33813,18 @@ stock CheckPassword(pass[])
 }
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
+	// --- poker (filterscripts/poker.amx) ---------------------------------------------
+	// This callback returns 1 for every dialog, so SA-MP never passes dialog answers on to
+	// filterscripts. The two poker input dialogs are handed to the poker filterscript here.
+	if(dialogid == POKER_DIALOG_BUYIN || dialogid == POKER_DIALOG_RAISE)
+	{
+		new poker_text[129];
+		strcat(poker_text, inputtext, sizeof poker_text);
+		if(poker_text[0] == EOS) poker_text = " "; // CallRemoteFunction crashes the server on an empty string
+		CallRemoteFunction("PokerDialogResponse", "iiiis", playerid, dialogid, response, listitem, poker_text);
+		return 1;
+	}
+	// ----------------------------------------------------------------------------------
 	static inputtextsave[256];
 	inputtextsave[0] = EOS; global_str = "";
 
@@ -107924,3 +107941,63 @@ stock ShowControlSettings(playerid)
 #include ../library/commands/players2.pwn
 #include model_static/recon.inc
 /*-_-_-_-_-_-_-_-_-[Include functions end]-_-_-_-_-_-_-_-_-*/
+
+
+// =====================================================================================
+//  POKER (filterscripts/poker.amx) - EURO inventory API
+//  The poker table takes the buy-in from the player's EURO item and returns the table
+//  balance as EURO when he leaves. Called from the filterscript via CallRemoteFunction.
+// =====================================================================================
+#define POKER_EURO_ITEM   615   // ItemsInfo[615] = "EURO" (same item the EURO exchange uses)
+#define POKER_API_VERSION 1
+
+forward Poker_ApiVersion(dummy);
+public Poker_ApiVersion(dummy)
+{
+	#pragma unused dummy
+	return POKER_API_VERSION;
+}
+
+// EURO the player holds in his inventory; -1 when he is not logged in
+forward Poker_GetEuro(playerid);
+public Poker_GetEuro(playerid)
+{
+	if(!IsPlayerConnected(playerid) || !IsPlayerOnline(playerid)) return -1;
+	return GetCount(playerid, POKER_EURO_ITEM);
+}
+
+// removes exactly `amount` EURO; returns 1 on success, 0 (nothing removed) otherwise
+forward Poker_TakeEuro(playerid, amount);
+public Poker_TakeEuro(playerid, amount)
+{
+	if(amount <= 0 || !IsPlayerConnected(playerid) || !IsPlayerOnline(playerid)) return 0;
+	new before = GetCount(playerid, POKER_EURO_ITEM);
+	if(before < amount) return 0;
+	DeleteItem(playerid, POKER_EURO_ITEM, amount);
+	return (GetCount(playerid, POKER_EURO_ITEM) == before - amount) ? 1 : 0;
+}
+
+// adds EURO; returns how many were actually added (less than `amount` if the
+// inventory is full or the player is not logged in - the filterscript keeps the rest)
+forward Poker_GiveEuro(playerid, amount);
+public Poker_GiveEuro(playerid, amount)
+{
+	if(amount <= 0 || !IsPlayerConnected(playerid) || !IsPlayerOnline(playerid)) return 0;
+	new before = GetCount(playerid, POKER_EURO_ITEM), left = amount, stackmax = ItemsInfo[POKER_EURO_ITEM][ItemQuantity];
+	// 1) top up existing EURO stacks first (AddItem refuses when every cell is used,
+	//    even if a EURO stack still has room)
+	for(new i; i < PI[playerid][pInvCell] && left > 0; i++)
+	{
+		if(Inventory[playerid][0][i] != POKER_EURO_ITEM || InventSlotUse[playerid][i]) continue;
+		new room = stackmax - Inventory[playerid][1][i];
+		if(room <= 0) continue;
+		new add = (left < room) ? left : room;
+		Inventory[playerid][1][i] += add;
+		left -= add;
+		if(shopopen{playerid} || InventoryOpen{playerid} || Int_GetPlayerData(playerid, "OtherInventOpen")) InvSlotUpdate(playerid, GetInvID(playerid, i, 1), i);
+	}
+	// 2) the rest into free cells, the normal way (shows the usual "item added" message)
+	if(left > 0) AddItem(playerid, POKER_EURO_ITEM, left);
+	else SaveInventory(playerid);
+	return GetCount(playerid, POKER_EURO_ITEM) - before;
+}

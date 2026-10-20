@@ -3610,8 +3610,9 @@ CMD:anims(playerid, params[])
 		}
 	}
 	if !(animid == 0) *then
-	    SPD(playerid, 0, DIALOG_STYLE_MSGBOX, "Pagalba", "{ffffff}Noredami sustabdyti animacija, iveskite: {ffff00}/stanim{ffffff} arba paspauskite {ffff00}ENTER", "Gerai", ""),
+	    SPD(playerid, 0, DIALOG_STYLE_MSGBOX, "Помощь", "{ffffff}Для того чтобы остановить анимацию, введите: {ffff00}/stanim{ffffff} или нажмите {ffff00}ENTER", "Хорошо", ""),
 			AnimPlayed{playerid} = true,
+				TextDrawShowForPlayer(playerid, StopAnimation);
 	return 1;
 }
 alias:anims("anim", "animlist");
